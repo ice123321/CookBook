@@ -54,13 +54,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return (T) view;
     }
 
-    /**
-     * Will set an picture of the ImageView for the picture link
-     *
-     * @param imageUrls The link of the Picture
-     * @param viewId    The ImageView id
-     * @return The BaseViewHolder for chaining
-     */
+
     public BaseViewHolder setImageResource(String imageUrls, @IdRes int viewId)
     {
         if (TextUtils.isEmpty(imageUrls)) return this;
@@ -84,13 +78,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Will set the image of an ImageView from a resource id.
-     *
-     * @param resourceId The image resource id.
-     * @param viewId     The view id.
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setImageResource(int resourceId, @IdRes int viewId)
     {
         ImageView view = getView(viewId);
@@ -101,13 +89,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Will set Circle Picture of the ImageView
-     *
-     * @param imageUrls The link of the picture
-     * @param viewId    The ImageView id
-     * @return The BaseViewHolder for chaining
-     */
+
     public BaseViewHolder setCircleImageResource(String imageUrls, @DimenRes int resize, @IdRes int viewId)
     {
         if (TextUtils.isEmpty(imageUrls)) return this;
@@ -122,11 +104,6 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
 
     /**
      * 加载圆角图片
-     *
-     * @param imageUrls
-     * @param viewId
-     * @param round
-     * @return
      */
     public BaseViewHolder setRoundImageResource(String imageUrls, int round, @IdRes int viewId)
     {
@@ -139,13 +116,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Will set the Text of the TextVeiw
-     *
-     * @param text   The text to put in the TextView
-     * @param viewId The View id
-     * @return The BaseViewHolder for chaining
-     */
+
     public BaseViewHolder setText(CharSequence text, @IdRes int viewId)
     {
         if (TextUtils.isEmpty(text)) return this;
@@ -157,13 +128,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Will set the Text of the TextVeiw
-     *
-     * @param text   The text to put in the TextView
-     * @param viewId The View id
-     * @return The BaseViewHolder for chaining
-     */
+
     public BaseViewHolder setText(SpannableString text, @IdRes int viewId)
     {
         if (text == null) return this;
@@ -175,13 +140,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Will set background color of a view.
-     *
-     * @param viewId The view id.
-     * @param color  A color, not a resource id.
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setBackgroundColor(@ColorInt int color, @IdRes int viewId)
     {
         View view = getView(viewId);
@@ -192,13 +151,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Will set background drawable of a view.
-     *
-     * @param viewId The view id.
-     * @param resId  A drawable, not a color id.
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setBackgroundResource(int resId, @IdRes int viewId)
     {
         View view = getView(viewId);
@@ -210,13 +163,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
     }
 
 
-    /**
-     * Will set text color of a TextView.
-     *
-     * @param viewId    The view id.
-     * @param textColor The text color (not a resource id).
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setTextColor(@ColorInt int textColor, @IdRes int viewId)
     {
         TextView view = getView(viewId);
@@ -228,13 +175,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
     }
 
 
-    /**
-     * Set a view visibility to VISIBLE (true) or INVISIBLE (false).
-     *
-     * @param viewId  The view id.
-     * @param visible True for VISIBLE, false for INVISIBLE.
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setVisible(@IdRes int viewId, boolean visible)
     {
         View view = getView(viewId);
@@ -246,13 +187,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
     }
 
 
-    /**
-     * Set a view visibility to VISIBLE (true) or INVISIBLE (false).
-     *
-     * @param viewId  The view id.
-     * @param visible True for VISIBLE, false for INVISIBLE.
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setVisible(@IdRes int viewId, int visible)
     {
         View view = getView(viewId);
@@ -263,13 +198,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder
         return this;
     }
 
-    /**
-     * Sets the on click listener of the view.
-     *
-     * @param viewId   The view id.
-     * @param listener The on click listener;
-     * @return The BaseViewHolder for chaining.
-     */
+
     public BaseViewHolder setOnClickListener(@IdRes int viewId, View.OnClickListener listener)
     {
         View view = getView(viewId);

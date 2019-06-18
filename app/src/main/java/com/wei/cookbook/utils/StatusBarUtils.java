@@ -242,8 +242,7 @@ public class StatusBarUtils
     }
 
     /**
-     * 使状态栏透明(5.0以上半透明效果,不建议使用)
-     * <p>
+
      * 适用于图片作为背景的界面,此时需要图片填充到状态栏
      *
      * @param activity 需要设置的activity
@@ -449,7 +448,6 @@ public class StatusBarUtils
     }
 
     /**
-     * 为 DrawerLayout 布局设置状态栏透明(5.0以上半透明效果,不建议使用)
      *
      * @param activity     需要设置的activity
      * @param drawerLayout DrawerLayout

@@ -44,11 +44,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
     }
 
 
-    /**
-     * Bind the charge RecyclerView and RecyclerView.Adapter
-     *
-     * @param recyclerView
-     */
+
     public void bindRecyclerView(RecyclerView recyclerView)
     {
         if (recyclerView == null)
@@ -77,11 +73,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
         mRecyclerView.setAdapter(this);
     }
 
-    /**
-     * Convenience method to scroll to a certain position.
-     *
-     * @param position
-     */
+
     public void scrollToPosition(int position)
     {
         if (mRecyclerView == null)
@@ -92,22 +84,14 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
     }
 
 
-    /**
-     * Obtain the  data in the container of RecyclerView.Adapter
-     *
-     * @return
-     */
+
     public List<T> getData()
     {
         return mList;
     }
 
 
-    /**
-     * Reinfuse data sources/update data sources in RecyclerVeiw.Adapter
-     *
-     * @param list
-     */
+
     public void setData(List<T> list)
     {
         mList.clear();
@@ -116,12 +100,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
     }
 
 
-    /**
-     * Insert the data of list into the container of RecyclerView.Adapter
-     *
-     * @param list
-     * @param index
-     */
+
     public void setData(List<T> list, @IntRange(from = 0) int index)
     {
         if (list == null || list.isEmpty()) return;
@@ -134,12 +113,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
     }
 
 
-    /**
-     * Insert the data  into the container of RecyclerView.Adapter
-     *
-     * @param t
-     * @param index
-     */
+
     public void setData(T t, @IntRange(from = 0) int index)
     {
         if (t == null) return;
@@ -151,11 +125,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
         notifyItemInserted(index);
     }
 
-    /**
-     * Set the empty layout
-     *
-     * @param view
-     */
+
     public void setEmptyView(View view)
     {
         if (view == null)
@@ -275,13 +245,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
     }
 
 
-    /**
-     * RecyclerVeiw.ViewHolder convert
-     *
-     * @param holder
-     * @param position
-     * @param t
-     */
+
     public abstract void convert(BaseViewHolder holder, int position, T t);
 
 
