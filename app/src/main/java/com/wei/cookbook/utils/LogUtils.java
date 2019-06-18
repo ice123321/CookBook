@@ -4,12 +4,7 @@ import android.util.Log;
 
 import com.orhanobut.logger.Logger;
 
-/**
- * 作者：赵若位
- * 时间：2018/6/21 10:07
- * 邮箱：1070138445@qq.com
- * 功能：
- */
+
 
 public class LogUtils
 {

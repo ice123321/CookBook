@@ -4,12 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-/**
- * 作者：赵若位
- * 时间：2018/11/29 11:18
- * 邮箱：1070138445@qq.com
- * 功能：
- */
+
 public class NetworkUtils
 {
 

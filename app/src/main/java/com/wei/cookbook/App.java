@@ -9,12 +9,7 @@ import com.wei.cookbook.sql.DBManager;
 import com.wei.cookbook.sql.DaoSession;
 import com.wei.cookbook.utils.InitializeManager;
 
-/**
- * 作者：赵若位
- * 时间：2018/3/27 16:40
- * 邮箱：1070138445@qq.com
- * 功能：
- */
+
 
 public class App extends Application
 {

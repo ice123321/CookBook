@@ -14,9 +14,6 @@ import com.bumptech.glide.request.RequestOptions;
 import java.io.File;
 
 /**
- * 作者：赵若位
- * 时间：2018/10/30 15:36
- * 邮箱：1070138445@qq.com
  * 功能：图片加载
  */
 public class ImageUtils

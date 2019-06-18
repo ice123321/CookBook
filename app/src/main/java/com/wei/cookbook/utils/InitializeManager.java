@@ -14,12 +14,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * 作者：赵若位
- * 时间：2018/11/28 13:33
- * 邮箱：1070138445@qq.com
- * 功能：
- */
+
 public class InitializeManager extends IntentService
 {
     private static final String TAG = InitializeManager.class.getSimpleName();

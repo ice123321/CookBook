@@ -11,12 +11,6 @@ import android.widget.ImageView;
 import com.wei.cookbook.R;
 
 
-/**
- * 作者：赵若位
- * 时间：2018/5/24 2:19
- * 邮箱：1070138445@qq.com
- * 功能：
- */
 
 public class ProgressDialog extends Dialog
 {

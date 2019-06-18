@@ -22,12 +22,7 @@ import com.wei.cookbook.R;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * 作者：赵若位
- * 时间：2018/9/18 0018 17:09
- * 邮箱：1070138445@qq.com
- * 功能：
- */
+
 public class StatusBarUtils
 {
     public static final int DEFAULT_STATUS_BAR_ALPHA = 112;

@@ -15,12 +15,7 @@ import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * 作者：赵若位
- * 时间：2018/3/7 21:14
- * 邮箱：1070138445@qq.com
- * 功能：
- */
+
 
 public class StringUtils
 {

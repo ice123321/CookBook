@@ -18,12 +18,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * 作者：赵若位
- * 时间：2018/11/22 16:21
- * 邮箱：1070138445@qq.com
- * 功能：
- */
 public class RxUtils
 {
 
