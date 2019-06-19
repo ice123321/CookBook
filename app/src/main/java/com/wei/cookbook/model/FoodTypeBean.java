@@ -45,11 +45,7 @@ public class FoodTypeBean
 
     public static class ListBean implements Parcelable
     {
-        /**
-         * id : 1
-         * name : 家常菜
-         * parentId : 10001
-         */
+
 
         private int id;
         private String name;

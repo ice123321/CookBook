@@ -17,7 +17,6 @@ import com.wei.cookbook.net.BasePresenter;
 import com.wei.cookbook.net.BaseView;
 import com.wei.cookbook.utils.ActivityManager;
 import com.wei.cookbook.utils.ProgressDialog;
-import com.wei.cookbook.utils.StatusBarUtils;
 
 import java.util.concurrent.TimeUnit;
 

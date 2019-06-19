@@ -22,7 +22,7 @@ public class App extends Application
         super.onCreate();
         mContext = getApplicationContext();
         mSession = DBManager.getManager().init(this).getSession();
-        InitializeManager.init(mContext);
+
     }
 
 
