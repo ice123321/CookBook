@@ -79,7 +79,7 @@ public class FoodListActivity extends BaseActivity<FoodPresenter>
                     @Override
                     public void onClick(View v)
                     {
-                        openActivity(FoodDetailActivity.class, data);
+
                     }
                 });
             }

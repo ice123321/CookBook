@@ -51,10 +51,6 @@
             android:screenOrientation="portrait" />
 
         <!--菜品详情页-->
-        <activity
-            android:name=".ui.FoodDetailActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" />
 
         <!--我的收藏-->
 

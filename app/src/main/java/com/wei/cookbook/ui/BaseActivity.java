@@ -64,7 +64,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends RxAppCompatA
     public void setContentView(int layoutResID)
     {
         setStatusBarColor();
-        StatusBarUtils.setLightMode(this);
+
         super.setContentView(layoutResID);
     }
 

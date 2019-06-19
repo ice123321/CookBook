@@ -27,30 +27,6 @@ public class ImageUtils
     }
 
 
-    //加载用户头像
-    public void setUserImageResource(String imageUrls, ImageView view)
-    {
-        if (view == null || TextUtils.isEmpty(imageUrls)) return;
-        RequestOptions options = new RequestOptions()
-                .circleCrop();
-        Glide.with(mContext)
-                .asBitmap()
-                .load(imageUrls)
-                .apply(options)
-                .into(view);
-    }
-
-    //加载用户头像
-    public void setUserImageResource(File file, ImageView view)
-    {
-        if (view == null || (!file.exists())) return;
-        RequestOptions options = new RequestOptions()
-                .circleCrop();
-        Glide.with(mContext)
-                .load(file)
-                .apply(options)
-                .into(view);
-    }
 
 
     //加载网络圆形图片
