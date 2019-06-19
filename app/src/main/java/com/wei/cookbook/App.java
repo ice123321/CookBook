@@ -3,12 +3,9 @@ package com.wei.cookbook;
 import android.app.Application;
 import android.content.Context;
 
-import com.facebook.stetho.Stetho;
 import com.wei.cookbook.model.UserBean;
 import com.wei.cookbook.sql.DBManager;
 import com.wei.cookbook.sql.DaoSession;
-import com.wei.cookbook.utils.InitializeManager;
-
 
 
 public class App extends Application

@@ -56,7 +56,6 @@
 
 
         <!--异步初始化第三方框架-->
-        <service android:name=".utils.InitializeManager" />
 
     </application>
 </manifest>
