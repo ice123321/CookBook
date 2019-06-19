@@ -4,7 +4,6 @@ import android.app.Application;
 import android.content.Context;
 
 import com.wei.cookbook.model.UserBean;
-import com.wei.cookbook.sql.DBManager;
 import com.wei.cookbook.sql.DaoSession;
 
 
@@ -21,7 +20,7 @@ public class App extends Application
     {
         super.onCreate();
         mContext = getApplicationContext();
-        mSession = DBManager.getManager().init(this).getSession();
+
 
     }
 
