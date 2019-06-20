@@ -18,6 +18,7 @@ import java.util.List;
 public class FoodBean implements Parcelable
 {
 
+
     private String id;
     @Id
     private String title;
@@ -204,10 +205,6 @@ public class FoodBean implements Parcelable
 
     public static class StepsBean implements Parcelable
     {
-        /**
-         * img : http://juheimg.oss-cn-hangzhou.aliyuncs.com/cookbook/s/10/909_70d5525103c69d8a.jpg
-         * step : 1.鲈鱼一条，开肚洗净
-         */
 
         private String img;
         private String step;
@@ -268,16 +265,14 @@ public class FoodBean implements Parcelable
     }
 
 
-    /*验证当前菜品是否已被收藏*/
     public boolean isCollected()
     {
         FoodBeanDao dao = App.mSession.getFoodBeanDao();
-        FoodBean data = dao.queryBuilder().where(FoodBeanDao.Properties.Id.eq(this.id))
-                .unique();
+        FoodBean data = dao.queryBuilder().where(FoodBeanDao.Properties.Id.eq(this.id)).unique();
         return data != null;
     }
 
-    /*收藏该条菜品*/
+
     public void collect()
     {
         FoodBeanDao dao = App.mSession.getFoodBeanDao();
@@ -285,7 +280,7 @@ public class FoodBean implements Parcelable
         dao.insertOrReplace(this);
     }
 
-    /*取消收藏该条菜品*/
+
     public void cancel()
     {
         FoodBeanDao dao = App.mSession.getFoodBeanDao();

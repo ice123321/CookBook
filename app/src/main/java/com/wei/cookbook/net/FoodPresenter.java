@@ -1,7 +1,5 @@
 package com.wei.cookbook.net;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.android.ActivityEvent;
 import com.wei.cookbook.App;
@@ -12,7 +10,6 @@ import com.wei.cookbook.model.FoodBean;
 import com.wei.cookbook.model.FoodTypeBean;
 import com.wei.cookbook.sql.FoodBeanDao;
 import com.wei.cookbook.utils.RxUtils;
-import com.wei.cookbook.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,33 +72,7 @@ public class FoodPresenter extends BasePresenter<BaseView>
 
 
 
-    /*获取收藏数据*/
-    public void getCollectedData()
-    {
-        add(
-                Flowable.create(new FlowableOnSubscribe<List<FoodBean>>()
-                {
-                    @Override
-                    public void subscribe(FlowableEmitter<List<FoodBean>> e) throws Exception
-                    {
-                        FoodBeanDao dao = App.mSession.getFoodBeanDao();
-                        List<FoodBean> list = dao.loadAll();
-                        e.onNext(list != null ? list : new ArrayList<FoodBean>());
-                        e.onComplete();
-                    }
-                }, BackpressureStrategy.BUFFER)
-                .compose(this.<List<FoodBean>>loadTransformer())
-                .subscribeWith(new BaseObserver<List<FoodBean>>(mView)
-                {
-                    @Override
-                    public void onNext(List<FoodBean> list)
-                    {
-                        if (mView != null)
-                        {
-                            mView.showData(list);
-                        }
-                    }
-                })
-        );
-    }
+
+
+
 }

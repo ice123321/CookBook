@@ -9,7 +9,6 @@ import android.view.View;
 import com.wei.cookbook.R;
 import com.wei.cookbook.model.FoodBean;
 import com.wei.cookbook.model.FoodTypeBean;
-import com.wei.cookbook.net.BasePresenter;
 import com.wei.cookbook.net.FoodPresenter;
 import com.wei.cookbook.ui.adapter.BaseAdapter;
 import com.wei.cookbook.ui.adapter.BaseViewHolder;
